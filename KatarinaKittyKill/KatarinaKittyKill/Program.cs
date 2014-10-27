@@ -14,7 +14,7 @@ namespace KatarinaKittyKill
 {
     class Program
     {
-        public const string ChampionName = "不详之刃";
+        public const string ChampionName = "Katarina";
 
         //Spells
         public static List<Spell> SpellList = new List<Spell>();
