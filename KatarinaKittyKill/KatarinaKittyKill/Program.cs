@@ -14,7 +14,7 @@ namespace KatarinaKittyKill
 {
     class Program
     {
-        public const string ChampionName = "Ka";
+        public const string ChampionName = "Katarina";
 
         //Spells
         public static List<Spell> SpellList = new List<Spell>();
@@ -78,7 +78,7 @@ namespace KatarinaKittyKill
             menu.AddSubMenu(targetSelectorMenu);
 
             //Key 
-            menu.AddSubMenu(new Menu("Key", "Key"));
+            menu.AddSubMenu(new Menu("Key", "键"));
             menu.SubMenu("Key").AddItem(new MenuItem("ComboActive", "Combo!").SetValue(new KeyBind(menu.Item("Combo_Key").GetValue<KeyBind>().Key, KeyBindType.Press)));
             menu.SubMenu("Key").AddItem(new MenuItem("HarassActive", "Harass!").SetValue(new KeyBind(menu.Item("LaneClear_Key").GetValue<KeyBind>().Key, KeyBindType.Press)));
             menu.SubMenu("Key").AddItem(new MenuItem("HarassActiveT", "Harass (toggle)!").SetValue(new KeyBind("Y".ToCharArray()[0], KeyBindType.Toggle)));
